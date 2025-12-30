@@ -1,6 +1,6 @@
 @Host= http://localhost
 @port=5239
-@Smartsolutions.API_HostAddress = {{Host}}:{{port}}
+@Smartsolutions.API_HostAddress = https://localhost:7214
 
 GET {{Smartsolutions.API_HostAddress}}/api/weatherforecast/Example
 Accept: application/json
@@ -14,3 +14,6 @@ Content-Type:application/json
 {
   "email":"test@gmail.com"
 }
+GET {{Smartsolutions.API_HostAddress}}/api/weatherforecast/Example
+
+###
