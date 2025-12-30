@@ -1,0 +1,16 @@
+@Host= http://localhost
+@port=5239
+@Smartsolutions.API_HostAddress = {{Host}}:{{port}}
+
+GET {{Smartsolutions.API_HostAddress}}/api/weatherforecast/Example
+Accept: application/json
+Guid:{{$guid}}
+LocalDate:{{$localDatetime iso8601}}
+Randam-init:{{$randomInt}}
+
+###
+POST {{Smartsolutions.API_HostAddress}}/api/weatherforecast/
+Content-Type:application/json
+{
+  "email":"test@gmail.com"
+}
