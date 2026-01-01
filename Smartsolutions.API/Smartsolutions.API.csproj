@@ -8,6 +8,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Smartsolutions.Application\Smartsolutions.Application.csproj" />
+    <ProjectReference Include="..\Smartsolutions.Infrastructure\Smartsolutions.Infrastructure.csproj" />
   </ItemGroup>
-
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.22">
+			<PrivateAssets>all</PrivateAssets>
+				<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 </Project>
